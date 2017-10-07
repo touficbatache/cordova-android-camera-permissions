@@ -1,19 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <plugin id="cordova-plugin-android-camera-permissions" version="1.0.4" xmlns="http://apache.org/cordova/ns/plugins/1.0">
-    <name>Camera Permissions</name>
-    <author>Chris Durfee</author>
-    <description>Cordova plugin to add the android camera permissions.</description>
-    <keywords>cordova camera permissions</keywords>
+    <name>Write external Permissions</name>
+    <author>Toufic Batache</author>
+    <description>Cordova plugin to add the android write external permissions.</description>
+    <keywords>cordova write external permissions</keywords>
     <license>MIT</license>
     <engines>
         <engine name="cordova" version=">=3.0.0"/>
     </engines>
     <platform name="android">
       <config-file target="AndroidManifest.xml" parent="/manifest">
-        <uses-permission android:name="android.permission.CAMERA" />
-        <uses-permission android:name="android.permission.RECORD_AUDIO" />
-        <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-        <uses-feature android:name="android.hardware.camera" android:required="true" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
       </config-file>
     </platform>
 </plugin>
